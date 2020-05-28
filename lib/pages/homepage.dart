@@ -11,6 +11,12 @@ class _HomeState extends State<HomePage> {
   Widget cards(String name,String image, Color color){
 
     return Card(
+        child: InkWell(
+        splashColor: Colors.blue.withAlpha(30),
+    onTap: () {
+    print('Card tapped.');
+    },
+
       child: Padding(
         padding: const EdgeInsets.all(14.0),
         child: Column(
@@ -30,59 +36,61 @@ class _HomeState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              children: <Widget>[
-                FlatButton(
-                  padding: EdgeInsets.all(0),
-                  onPressed: () {},
-                  child: Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                      color: Colors.black,
-                    ),
-                    child: Text(
-                      'Listen to music',
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  width: 2,
-                ),
-                FlatButton(
-                  padding: EdgeInsets.all(0),
-                  onPressed: () {},
-                  child: Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                      color: color,
-                    ),
-                    padding: EdgeInsets.all(5),
-                    child: Text(
-                      'Read Holy books',
-                      style: TextStyle(color: Colors.black, fontSize: 15),
-                    ),
-                  ),
-                ),
-              ],
-            )
+
+//            SizedBox(
+//              height: 20,
+//            ),
+//            Row(
+//              children: <Widget>[
+//                FlatButton(
+//                  padding: EdgeInsets.all(0),
+//                  onPressed: () {},
+//                  child: Container(
+//                    padding: EdgeInsets.all(5),
+//                    decoration: BoxDecoration(
+//                      border: Border.all(color: Colors.black),
+//                      color: Colors.black,
+//                    ),
+//                    child: Text(
+//                      'Listen to music',
+//                      style: TextStyle(color: Colors.white, fontSize: 15),
+//                    ),
+//                  ),
+//                ),
+//                SizedBox(
+//                  width: 2,
+//                ),
+//                FlatButton(
+//                  padding: EdgeInsets.all(0),
+//                  onPressed: () {},
+//                  child: Container(
+//                    decoration: BoxDecoration(
+//                      border: Border.all(color: Colors.black),
+//                      color: color,
+//                    ),
+//                    padding: EdgeInsets.all(5),
+//                    child: Text(
+//                      'Read Holy books',
+//                      style: TextStyle(color: Colors.black, fontSize: 15),
+//                    ),
+//                  ),
+//                ),
+//              ],
+//            )
           ],
         ),
       ),
+    ),
     );
   }
   @override
   Widget build(BuildContext context) {
-    final name=['Hinduism','Sikhism','Islam','Christian'];
+    final name=['Hinduism','Sikhism','Islam','Christianity'];
     final image=['om.png','waheguru.jpg','islam.jpg','christian.jpg'];
     final color=[Colors.orange,Colors.deepOrangeAccent, Color(0xFF007332),Color(0xFFF6EAD8)];
     return SafeArea(
       child: Container(
-        color: Colors.grey[100],
+        color: Colors.grey[200],
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child:ListView.builder(

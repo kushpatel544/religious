@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Religions(
-                  name: 'Christian',
+                  name: 'Christianity',
                   image: 'christian.jpg',
                   color: Color(0xFFF6EAD8),
                 )
@@ -70,7 +70,6 @@ class _HomePageState extends State<HomePage> {
         ]),
       ),
     );
-    ;
   }
 }
 
