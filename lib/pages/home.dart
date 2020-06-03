@@ -4,9 +4,6 @@ import 'package:flutter/widgets.dart';
 import 'package:religious/pages/sikh_path.dart';
 import 'createRoute.dart';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
 class HomePage extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
